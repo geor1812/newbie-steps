@@ -41,7 +41,7 @@ const Signup = props => {
     if (validateInput()) {
       axios({
         method: 'post',
-        url: 'http://localhost:9000/accounts/',
+        url: `${process.env.REACT_APP_API_URL}/accounts`,
         data: {
           username: username,
           email: email,

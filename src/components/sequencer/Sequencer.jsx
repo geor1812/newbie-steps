@@ -137,7 +137,7 @@ const Sequencer = props => {
 
     axios({
       method: 'get',
-      url: `http://localhost:9000/accounts/${token}`,
+      url: `${process.env.REACT_APP_API_URL}/accounts/${token}`,
     }).then(res => {
       setUsername(res.data.account.username)
     })
@@ -287,7 +287,7 @@ const Sequencer = props => {
     }
     axios({
       method: 'post',
-      url: 'http://localhost:9000/tracks/',
+      url: `${process.env.REACT_APP_API_URL}/tracks`,
       data: newTrack,
     })
       .then(res => {

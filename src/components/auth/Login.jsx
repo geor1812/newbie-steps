@@ -16,7 +16,7 @@ const Login = props => {
     event.preventDefault()
     axios({
       method: 'post',
-      url: 'http://localhost:9000/auth/',
+      url: `${process.env.REACT_APP_API_URL}/auth`,
       data: {
         username: username,
         password: password,

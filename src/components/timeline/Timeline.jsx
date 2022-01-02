@@ -35,7 +35,7 @@ const Timeline = props => {
   useEffect(() => {
     axios({
       method: 'get',
-      url: `http://localhost:9000/tracks`,
+      url: `${process.env.REACT_APP_API_URL}/tracks`
     })
       .then(res => {
         setTracks(res.data.tracks)
