@@ -23,7 +23,7 @@ const Learn = () => {
       In a step sequencer, horizontal placement determines at which
       point in the loop the sound plays and vertical location
       determines the pitch of the note.`,
-      secondText: `                Though not necessary to using it, understanding rhythm
+      secondText: `                Though not necessary in using it, understanding rhythm
       subdivisions is helpful, so here is a brief explanation: If you
       imagine yourself tapping your foot along to a song, generally
       the time between each tap is a beat. Typically, 4 beats make a
